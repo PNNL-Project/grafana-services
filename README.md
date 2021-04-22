@@ -9,22 +9,22 @@ Official documentation can be found here.
 Change time range
 Dashboard Level
 Current selected time range is located on the upper right corner of the main dashboard. To switch to a different time range, click the drop down menu and select the desired time range or enter a custom time range on the left of the drop down menu.
-![](grafana-2.png)
+![](images/grafana-2.png)
 
 Panel Level
 Grafana also supports zoom in the time ranges of the data of any specific panel. On any panel that you would like to zoom in, click and drag to select the time range. In the following example, the first screenshot shows that the time range of the Zoom Temperature panel is selected from 04/09 to 04/12, and the second screenshot shows the result panel.
-![](grafana-3.png)
-![](grafana-4.png)
+![](images/grafana-3.png)
+![](images/grafana-4.png)
 
 Note: To zoom out for a larger time range, click the Zoom out  icon on the upper right of the screen. 
-![](grafana-5.png)
+![](images/grafana-5.png)
 
 Select multiple devices/series
 To compare multiple devices on the same panel, let’s use the Zoom Temperature panel to give an example. First, on the graph legend, click on the first desired device (AHU1VAV100 in the screenshot). You should see the rest of the devices are grayed out.
-![](grafana-6.png)
+![](images/grafana-6.png)
  
 Then while holding down the COMMAND or CONTROL key, click on the other comparing devices. 
-![](grafana-7.png)
+![](images/grafana-7.png)
 
 Note: It might be easier to make the graph larger for better comparison by clicking the panel name and then select View from the dropdown.
 
@@ -32,7 +32,7 @@ Setup an alert
 
 
 Click on the desired panel and select Edit, in this example, “Return Airflow” panel is used. On the following page, select Alert tab underneath the graph. Then click on Create Alert.
-![](grafana-8.png)
+![](images/grafana-8.png)
 
 Follow the instructions here to set up your alert as you would in Grafana cloud. 
 
@@ -43,4 +43,4 @@ Add a datasource
 To add another datasource, on the left sidebar of the main dashboard, click on the Setting icon, select Data Sources from the menu. Follow the instructions here to configure the desired type of datasource. 
 
 Note: The setting icon is only available to an admin role. However, the Grafana service in this project is expected to be used internally with IP address restrictions, thus Grafana service has enabled anonymous access which all users will be recognized as Admin role by default. 
-![](grafana-9.png)
+![](images/grafana-9.png)
